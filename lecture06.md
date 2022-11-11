@@ -14,6 +14,7 @@
   * イベント発生時刻、イベントの名前（起動されたDBの情報を返す）、発生元（RDS）、リージョン（東京）、発生元IPアドレス（内部ネットワーク）
 
 
+
 ### CloudWatchによるアラーム設定
 ##### 「Unhealthy」のとき、アラートを出す設定
 * ![アプリ（nginx）未起動時](https://user-images.githubusercontent.com/116282189/201360974-87ed67e2-1019-468a-8c95-b29ad2e98ffa.jpg)
