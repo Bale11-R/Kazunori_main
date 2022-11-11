@@ -1,9 +1,17 @@
 # 9月度第6回講義課題
 
 ### CloudTrailのログ情報
-* [20221110_CloudTrail_DB.txt](https://github.com/Bale11-R/Kazunori_main/files/9990879/20221110_CloudTrail_DB.txt)
-* 下に行くと、イベント内容や概要が記載されております。
-* 見えにくければ、再度ご提出いたします。
+* "userIdentity":{
+	"type":"IAMUser",
+	"principalId":"AIDAW2D5XEIR6RDEFKGKK",
+	"arn":"arn:aws:iam::468415095331:user/Kazu_IAMuser",
+  * ユーザーのタイプ（IAMUser）とユーザーの名前（ARN）
+* "eventTime":"2022-11-10T13:09:50Z",
+"eventSource":"rds.amazonaws.com",
+"eventName":"DescribeDBInstances",
+"awsRegion":"ap-northeast-1",
+"sourceIPAddress":"AWS Internal",
+  * イベント発生時刻、イベントの名前（起動されたDBの情報を返す）、発生元（RDS）、リージョン（東京）、発生元IPアドレス（内部ネットワーク）
 
 
 ### CloudWatchによるアラーム設定
