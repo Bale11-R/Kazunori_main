@@ -1,17 +1,50 @@
 # 9月度第6回講義課題
 
 ### CloudTrailのログ情報
-* "userIdentity":{
+
+```json
+{
+"eventVersion":"1.08",
+"userIdentity":{
 	"type":"IAMUser",
 	"principalId":"AIDAW2D5XEIR6RDEFKGKK",
-	"arn":"arn:aws:iam::468415095331:user/Kazu_IAMuser",
-  * ユーザーのタイプ（IAMUser）とユーザーの名前（ARN）
-* "eventTime":"2022-11-10T13:09:50Z",
+	"arn":"arn:aws:iam::********user/Kazu_IAMuser",
+	"accountId":"********",
+	"accessKeyId":"********",
+	"userName":"Kazu_IAMuser",
+	"sessionContext":{
+		"sessionIssuer":{
+		},
+		"webIdFederationData":{
+		},
+		"attributes":{
+			"creationDate":"2022-11-10T12:50:36Z",
+			"mfaAuthenticated":"true"
+		}
+	}
+},
+"eventTime":"2022-11-10T13:09:50Z",
 "eventSource":"rds.amazonaws.com",
 "eventName":"DescribeDBInstances",
 "awsRegion":"ap-northeast-1",
 "sourceIPAddress":"AWS Internal",
-  * イベント発生時刻、イベントの名前（起動されたDBの情報を返す）、発生元（RDS）、リージョン（東京）、発生元IPアドレス（内部ネットワーク）
+"userAgent":"AWS Internal",
+"requestParameters":{
+	"dBInstanceIdentifier":"kurata-database-01"
+},
+"responseElements":null,
+"requestID":"e812bf00-3b05-4be8-99f1-93ebf54ed180",
+"eventID":"0856f7a7-4c84-490f-b72c-d962e50f3ba0",
+"readOnly":true,
+"eventType":"AwsApiCall",
+"managementEvent":true,
+"recipientAccountId":"468415095331",
+"eventCategory":"Management",
+"sessionCredentialFromConsole":"true"
+}
+```
+* ユーザーのタイプ（IAMUser）とユーザーの名前（ARN）
+* イベント発生時刻、イベントの名前（起動されたDBの情報を返す）、発生元（RDS）、リージョン（東京）、発生元IPアドレス（内部ネットワーク）
 
 
 
